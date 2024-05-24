@@ -27,9 +27,6 @@ const moisturizerButtonLocator = '//a[@href="/moisturizer"]'
 const sunscreenButtonLocator = '//a[@href="/sunscreen"]'
 const temperatureLocator = '#temperature'
 const productsPageTitleLocator = 'h2'
-// productsName = await $$(`//*[contains(text(),'${text}') or contains(text(),'${text.toLowerCase()}')]`)
-// const productsNameLocator = (`//*[contains(text(),'${text}') or contains(text(),'${text.toLowerCase()}')]`)
-// const productsPriceLocator =(`//*[contains(text(),'${text}') or contains(text(),'${text.toLowerCase()}')]/following-sibling::p`)
 const cartLocator = '#cart'
 const totalPriceLocator = '#total'
 const paymentButtonLocator = 'button=Pay with Card'
@@ -41,12 +38,6 @@ const cvcLocator = "//input[@placeholder='CVC']"
 const billingZipLocator = "//input[@placeholder='ZIP Code']"
 const submitButton = '#submitButton'
 const successMessageLocator = 'h2'
-
-
-// function getProductType(productType){
-//     const getOsdds= `//a[@href="/${productType}"]`
-// }
-// await getProductType("sunscreen").getText()
 
 // function 1
 async function visitWebsite(url) {
@@ -73,7 +64,7 @@ async function getTemperatureValueOnly(temperature){
     if (temperatureValue) {
         temperatureValue = temperatureValue[0];
     }
-} // use on variable
+}
 
 // function 5
 async function clickRelevantArticle(lowerTemperature, higherTemperature, temperatureValue){
